@@ -8,7 +8,7 @@ import '../css/Files.css'
 
 const Files = ()=>{
 
-    const API_URL = "http://localhost:9092"
+    const API_URL = "https://uammero.azurewebsites.net"
     const user = useSelector(selectCurrentUser)
     const [error, setError]=useState(null)
     const [data, setData] = useState([])
