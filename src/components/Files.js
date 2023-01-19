@@ -86,7 +86,7 @@ const Files = ()=>{
         .catch(error=>{
             console.error(error)
         })
-    },[newLoading]);
+    },[newLoading, user.role]);
 
     const admin = (<div>
         <Form.Group controlId="formFile" className="mb-3">

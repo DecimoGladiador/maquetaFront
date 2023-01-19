@@ -21,14 +21,9 @@ function NavBar(){
 
     const admin = user.role.roleName ?? false
     
-                  
-    const test = ()=>{
-        console.log(user.role.roleName??"hola")
-    }
   
     return(
         <>
-            <button onClick={test}>test</button>
           <Navbar key='xl' bg="light" expand='md' className="mb-3" collapseOnSelect>
           <Container>
           <Navbar.Brand >
