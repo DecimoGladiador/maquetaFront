@@ -1,0 +1,32 @@
+.carouselUAM {
+    background-image: url(../assets/UameroSlide4.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+
+}
+
+.cover {
+    background-image: url(https://media0.giphy.com/media/2YgHXz8ByrBBV256l4/giphy.gif?cid=ecf05e479ymwf4dino86spw270liwkuo3froijtt8q6rjyy7&rid=giphy.gif&ct=g);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+}
+
+.card {
+    border-radius: 1rem;
+    border: 1px solid transparent;
+    backdrop-filter: blur(1rem);
+    box-shadow: 1.3rem 1.3rem 1.3rem rgba(0, 0, 0, 0.5);
+    border-top-color: rgba(225, 225, 225, 0.1);
+    border-left-color: rgba(225, 225, 225, 0.1);
+    border-bottom-color: rgba(225, 225, 225, 0.1);
+    border-right-color: rgba(225, 225, 225, 0.1);
+
+}
+
+.card-glass {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+}

@@ -1,0 +1,17 @@
+.navBarLinkActive {
+    color: red;
+    text-decoration: underline;
+    margin: 7px;
+
+}
+
+.navBarLinkInactive {
+    color: green;
+    text-decoration: none;
+    margin: 7px
+}
+
+
+.navBarLinkInactive:hover {
+    text-decoration: underline;
+}
