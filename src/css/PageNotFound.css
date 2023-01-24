@@ -1,0 +1,40 @@
+.not-found-page {
+    background: linear-gradient(to right, #ff8177, #ff867a, #ff8c7f, #ff9185, #ff978c, #ff9d94, #ffa39c, #ffa9a5);
+    animation: AnimationName 5s ease infinite;
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+.not-found-page h1 {
+    animation: blink 0.8s linear infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.not-found-page h1 {
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 60px #ff0000;
+}

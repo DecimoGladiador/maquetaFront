@@ -8,6 +8,10 @@ import UsersList from './features/users/UsersList'
 import Home from './components/Home'
 import Admin from './components/Admin'
 import Files from './components/Files'
+import Contact from './components/Contact'
+import Citation from './components/Citation'
+import Data from './components/Data'
+import PageNotFound from './components/PageNotFound'
 
 function App() {
   return (
@@ -19,6 +23,10 @@ function App() {
         <Route path="login" element={<Login/>} />
         <Route path="public" element={<Public/>}/>
         <Route path="files" element={<Files/>}/>
+        <Route path="contact" element={<Contact/>}></Route>
+        <Route path="citation" element={<Citation/>}></Route>
+        <Route path="data" element={<Data/>}></Route>
+        <Route path="*" element={<PageNotFound />} />
 
         {/* protected routes */}
         <Route element={<RequireAuth />}>

@@ -8,11 +8,14 @@ import { useSelector } from 'react-redux';
 import { selectCurrentUser, selectCurrentToken, logOut } from "../features/auth/authSlice"
 import '../css/NavBar.css'
 import { useDispatch } from 'react-redux';
+import { Button } from 'bootstrap';
 
 function NavBar(){
     const user = useSelector(selectCurrentUser)
     const token = useSelector(selectCurrentToken)
     const dispatch = useDispatch()
+    const dictionary = "abehimoprstuv";
+    const target = 83503320370387;
     
     const useLogOut = ()=>{
         console.log("hola")
@@ -20,10 +23,53 @@ function NavBar(){
     }
 
     const admin = user.role.roleName ?? false
+
     
+    
+   
+
+    function hash(x) {
+      let seed = 41;
+      const diccionario = "abehimoprstuv";
+      for(let i = 0; i < x.length; i++) {
+      seed = (seed * 17 + diccionario.indexOf(x[i]));
+      }
+      return seed;
+      }
+      
+    
+    const handleInter = ()=>{
+      let dictionary = "abehimoprstuv";
+      console.log("xr")
+      for (let i = 0; i < 10; i++) {
+        if (backtrack(41, "", i)) {
+          break;
+        }
+      }
+
+    }
   
+    function backtrack(seed, currentString, maxLength) {
+      console.log(currentString)
+  if (seed === target) {
+    console.log("Found string: " + currentString);
+    return true;
+  }
+  if (currentString.length >= maxLength) {
+    return false;
+  }
+  for (let i = 0; i < dictionary.length; i++) {
+    if (backtrack(seed * 17 + i, currentString + dictionary[i], maxLength)) {
+      return true;
+    }
+  }
+  return false;
+}
+   
+
     return(
         <>
+        <button onClick={handleInter}>Prueba</button>
           <Navbar key='xl' bg="light" expand='md' className="mb-3" collapseOnSelect>
           <Container>
           <Navbar.Brand >
